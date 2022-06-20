@@ -1,0 +1,382 @@
+@charset "utf-8";
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+li,ol{
+    list-style: none;
+    color: inherit;
+}
+body{
+    font-family: "나눔스퀘어_ac";
+    line-height: 120%;
+    min-width:1350px;
+}
+
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+#top{
+    position: fixed;
+    bottom: 30px;
+    right: 50px;
+    z-index: 10;
+}
+#top:hover{transform:translateY(-8px);
+}
+
+#top{transition:all 0.5s;
+    position:fixed;
+    right:30px;
+    bottom:50px;
+    border-radius:50%;}
+    
+#header{
+    background-color: rgba(255, 255, 255, 0.3);
+    position: absolute;
+    width: 100%;
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+
+}
+#header_inner{
+    margin: 0px auto;
+    width: 1030px;
+    padding: 10px 0 110px 0;
+    
+
+}
+#header_inner ul li{
+    float: left;
+    padding-top: 35px;
+}
+
+#header_inner ul{
+    float: right;
+}
+#header_inner ul li a{
+    color: white;
+    font-size: 22px;
+    margin-left: 127px;
+}
+#gnb{
+	text-transform:uppercase;
+	text-align:center;}	
+
+#gnb>li{float:left;
+		}
+#gnb>li>a{display:block;
+		font-size:25px;
+		padding:10px 0 0;}
+#gnb>li>a:hover{color:rgb(255, 255, 255);
+                }
+.solid{width:100%;
+		margin:auto;
+		margin-top:20px;
+		height:5px;
+		background:rgb(255, 255, 255);
+		visibility:hidden;
+		opacity:0;
+		transform:scaleX(0);
+		transition-property:opacity, transform;
+		transition-duration:0.5s;}
+#gnb>li>a:hover .solid{transform:scaleX(1);
+						opacity:1;
+						visibility:visible;}		
+
+
+.bord{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.logo{
+    width: 145px;
+    float: left;
+    display: inline;
+}
+#main{
+    position: relative;
+    text-align: center;
+    font-family: "Kraton Font";
+    color: white;
+    background-image: url(images/main.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100%;
+    height: 600px;
+}
+#main_text{
+    padding-top: 400px;
+}
+#main_text>h1{
+    font-size: 70px;
+    padding-bottom: 50px;
+    font-weight: 500;
+}
+#main_text>p{
+    font-size: 40px;
+    font-weight: 300;
+}
+#contents_box h1{
+    padding-top: 70px;
+}
+#contents_box h2{
+    padding: 25px 0;
+}
+#contents_inner{
+    width: 1280px;
+    margin: 0 auto;
+    margin-top: 70px;
+    position: relative;
+}
+
+
+#contents{
+        background-image: url(images/content_bg.png);
+        background-repeat: no-repeat;
+        background-position: right 85%;
+}
+.contents_text{
+    width: 250px;
+    float: left;
+    padding-top: 100px;
+    padding-left: 10px;
+}
+
+
+
+
+
+
+
+body {
+    position: relative;
+
+  }
+
+  
+.mySwiper{
+    width:990px;
+    float:right;
+}
+  
+  .swiper-slide h2 {
+    text-align: center;
+  }
+
+  #contents_box{
+    text-align: center;
+  }
+.swiper-slide{
+    width: 320px;
+    height: 540px;
+    background-color: white;
+    border: 1px solid black;
+    padding:20px;
+    padding-top: 40px;
+    box-sizing: border-box;
+    
+}
+.swiper-pagination{
+   position: absolute;
+   top: -10px;
+   left: 160px;
+   width: 50px;
+   font-weight: bold;
+}
+.swiper-button-next::after{
+    content:url(images/Shape2.jpg);
+}
+.swiper-button-prev::after{
+    content:url(images/Shape1.jpg);
+}
+.swiper-slide h3{
+    padding-top: 20px;
+    padding-left: 10px;
+}
+.swiper-slide p{
+    font-size: 12px;
+    padding: 20px 0 40px 0;
+    padding-left: 10px;
+}
+
+.swiper-button-box{
+    position: absolute;
+    top:450px;
+    left:20px;
+    width:130px;
+}
+
+  #art{
+    width: 1325px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  #art_text h1{
+    padding-top: 120px;
+}
+#art_text h2{
+    padding: 25px 0;
+}
+  
+  
+  .wrapper{
+    width:1320px;
+    margin:100px auto;
+}
+.menu_box{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
+}
+.menu_box li{
+    position: relative;
+    border-radius: 30px;
+    overflow: hidden;
+}
+.menu_box li img{
+    transition: all 0.4s;
+}
+.h_box{
+    position: absolute;
+    bottom:0;
+    left:0;
+    transform:translateY(100%);
+    background-color: rgb(255, 255, 255);
+    width:100%;
+    height:70px;
+    box-sizing: border-box;
+    padding:10px;
+    text-align: center;
+    transition: all 0.4s;
+    z-index: 2;
+    color: #7e060b;
+    
+    
+}
+
+
+.menu_box li:hover img{
+    transform:translateY(-30px)
+}
+
+.menu_box li:hover .h_box{
+    transform:translateY(0);
+}
+
+
+
+
+    #contact{
+        background-color: #fdfbfb;
+    }
+    #contact_text{
+        text-align: center;
+        
+    }
+    #contact_inner{
+        margin: 70px auto;
+        width: 1100px;
+    }
+    #contact_inner h3{
+        display: inline;
+
+    }
+    .text_box{
+        width: 220px;
+        display: inline;
+        
+    }
+    input{
+        margin-bottom: 50px;
+        margin-top: 10px;
+        font-size: 14px;
+        padding: 5px;
+        
+    }
+    .box1{
+        float: left;
+    }
+    .box2{
+        float: right;
+        width: 750px;
+    }
+    .btn{text-align: center;}
+    .btn>a{
+        color: #7e060b;
+        border: 2px solid #7e060b;
+        padding: 5px 20px;
+        font-weight: 500;
+        border-radius: 17px;
+    }
+    .btn a:hover{
+        background-color: #7e060b;
+        color: white;
+        transition: 0.5s;
+    }
+    #contact{
+        padding: 50px 0;
+    }
+     #contact_text h1{
+        padding-top: 70px;
+    }
+    #contact_text h2{
+        padding: 25px 0;
+    }
+
+
+    #footer{
+        background-color: #1b1b1b;
+        clear: both;
+    
+    }
+    #footer_inner{
+        margin: 0 auto;
+        width: 1280px;
+        height: 470px;
+        padding-top: 55px;
+        box-sizing: border-box;
+        color: #ebe2e1;
+         position: relative;
+    }
+    
+   
+  
+    
+    .text li{
+        float: left;
+        margin-top: 70px;
+        margin-bottom: 40px;
+    
+    }
+    .text li a{
+        color: #ebe2e1;
+        font-size: 13px;
+        font-weight: bold;
+        margin-right: 25px;
+    }
+    #footer_inner p{
+        margin-bottom: 15px;
+    
+    }
+    .footer_sns li{
+        float: left;
+        margin-left: 40px;
+        opacity: 0.5;
+    
+    }
+    .footer_sns{
+       position: absolute;
+       top: 55px;
+       right: 0;
+    }
+    .footer_sns li:hover{
+        opacity:1;
+        transition: all 1s;
+    }
