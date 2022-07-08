@@ -1,4 +1,14 @@
 @charset "utf-8";
+@font-face {
+    font-family: 'Kraton Font';
+    src: url('fonts/Kraton-Modern-Ligature-Font.eot');
+    src: url('fonts/Kraton-Modern-Ligature-Font.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Kraton-Modern-Ligature-Font.woff2') format('woff2'),
+         url('fonts/Kraton-Modern-Ligature-Font.woff') format('woff'),
+         url('fonts/Kraton-Modern-Ligature-Font.ttf')  format('truetype'),
+         url('fonts/Kraton-Modern-Ligature-Font.svg#Kraton Font') format('svg');
+}
+@import url('https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css');
 *{
     margin: 0;
     padding: 0;
